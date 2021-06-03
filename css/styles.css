@@ -11,6 +11,7 @@
   --header-border-color: #ececec;
   --card-border-color: #eeeeee;
   --button-hover: #188ce8;
+  --hero-bg-gradient: #2f303a66;
 }
 
 /* загальні властивості */
@@ -150,7 +151,12 @@ body {
 /* МЕЙН */
 /* Герой */
 .section.hero {
-  background-color: var(--hero-bg-color);
+  background-image: linear-gradient(
+      to right,
+      var(--hero-bg-gradient),
+      var(--hero-bg-gradient)
+    ),
+    url(../images/background-image-hero.jpg);
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
