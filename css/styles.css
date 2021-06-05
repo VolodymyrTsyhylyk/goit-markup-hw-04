@@ -12,6 +12,7 @@
   --card-border-color: #eeeeee;
   --button-hover: #188ce8;
   --hero-bg-gradient: #2f303a66;
+  --icon-first-color: #afb1b8;
 }
 
 /* загальні властивості */
@@ -58,7 +59,7 @@ body {
 }
 .title .subtitle {
   font-size: 36px;
-  line-height: 1.17;
+  line-height: 1.172;
   margin: 0;
   padding: 0;
 }
@@ -70,9 +71,8 @@ body {
 .image {
   display: block;
 }
-
-.feature .list {
-  display: flex;
+.icon {
+  fill: currentColor;
 }
 /* ХЕДЕР */
 
@@ -109,7 +109,8 @@ body {
 .site-nav > .list {
   display: flex;
 }
-.connection {
+.connection,
+.connection .item {
   display: flex;
   margin-left: auto;
 }
@@ -136,12 +137,20 @@ body {
 
 /* ХЕДЕР, контакти */
 .header .contact {
+  display: flex;
+  align-items: center;
+
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
 }
+
+.connection .icon {
+  margin-right: 10px;
+}
+
 .header .link:hover,
 .header .link:focus {
   color: var(--accent-color);
@@ -157,6 +166,8 @@ body {
       var(--hero-bg-gradient)
     ),
     url(../images/background-image-hero.jpg);
+  max-width: 1600px;
+  height: 600px;
   padding-top: 200px;
   padding-bottom: 200px;
   text-align: center;
@@ -200,8 +211,20 @@ body {
 .feature .item + .item {
   margin-left: 30px;
 }
+.feature .thumb {
+  display: flex;
+  width: 100%;
+  height: 120px;
+  margin-bottom: 30px;
 
-.feature .subtitle {
+  justify-content: center;
+  align-items: center;
+  background-color: var(--team-bg-color);
+  border-radius: 4px;
+}
+
+.feature .subtitle,
+.footer .title {
   margin-bottom: 10px;
 
   font-size: 14px;
@@ -214,6 +237,9 @@ body {
   line-height: 1.714;
   padding-bottom: 6px;
 }
+.feature .list {
+  display: flex;
+}
 /* ОСОБЛИВОСТІ */
 
 /* ЧИМ МИ ЗАЙМАЄМОСЬ */
@@ -223,7 +249,6 @@ body {
 }
 
 .activity .title {
-  margin-bottom: 50px;
   margin-top: 0px;
   font-size: 36px;
   font-weight: 700;
@@ -231,6 +256,11 @@ body {
   letter-spacing: 0.03em;
 }
 
+.activity .title,
+.team .title,
+.clients .title {
+  margin-bottom: 50px;
+}
 .activity .list {
   display: flex;
 }
@@ -250,7 +280,6 @@ body {
 }
 
 .team .title {
-  margin-bottom: 50px;
   margin-top: 0px;
   font-size: 36px;
   font-weight: 700;
@@ -258,7 +287,8 @@ body {
   letter-spacing: 0.03em;
 }
 
-.team .list {
+.team .list,
+.clients .list {
   display: flex;
 }
 
@@ -290,6 +320,30 @@ body {
 .team .text {
   font-size: 16px;
   line-height: 1.19;
+  margin-bottom: 16px;
+}
+.icon-set {
+  display: flex;
+  justify-content: center;
+}
+.team .icon-set {
+  color: var(--icon-first-color);
+}
+.icon-set > .item {
+  display: flex;
+  width: 44px;
+  height: 44px;
+}
+.icon-set .link {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+}
+.icon-set > .item + .item {
+  margin-left: 10px;
 }
 /* КОМАНДА */
 /* МЕЙН */
