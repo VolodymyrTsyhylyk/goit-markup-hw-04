@@ -16,6 +16,15 @@
 }
 
 /* загальні властивості */
+ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+h2,
+h3 {
+  margin-top: 0;
+}
 body {
   font-family: "roboto", sans-serif;
   background-color: var(--primary-bg-color);
@@ -345,6 +354,43 @@ body {
 .icon-set > .item + .item {
   margin-left: 10px;
 }
+.icon-set .link:hover,
+.icon-set .link:focus {
+  color: var(--white-text-color);
+  background-color: var(--accent-color);
+}
+
+/* КЛІЄНТИ */
+.clients {
+  text-align: center;
+}
+.clients .item {
+  width: 170px;
+  height: 92px;
+}
+.clients .item + .item {
+  margin-left: 30px;
+}
+.clients .link {
+  display: flex;
+  width: 100%;
+  height: 100%;
+  align-items: center;
+  justify-content: center;
+  color: var(--icon-first-color);
+  border-radius: 4px;
+  border: 1px solid #afb1b8;
+}
+.clients .title {
+  font-size: 36px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+}
+
+/* КЛІЄНТИ */
+
 /* КОМАНДА */
 /* МЕЙН */
 
