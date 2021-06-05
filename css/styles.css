@@ -284,7 +284,7 @@ body {
 
 /* КОМАНДА */
 .team {
-  background-color: var(--alt-bg-color);
+  background-color: var(--team-bg-color);
   text-align: center;
 }
 
@@ -388,7 +388,11 @@ body {
   letter-spacing: 0.03em;
   margin-bottom: 50px;
 }
-
+.clients .link:hover,
+.clients .link:focus {
+  color: var(--accent-color);
+  border-color: var(--accent-color);
+}
 /* КЛІЄНТИ */
 
 /* КОМАНДА */
@@ -466,15 +470,15 @@ body {
 
 /* ФУТЕР */
 .footer {
-  padding-top: 60px;
-  padding-bottom: 60px;
   background-color: var(--hero-bg-color);
 }
-.adress {
-  font-style: normal;
+.footer .container {
+  display: flex;
 }
-.adress .text {
-  color: var(--white-text-color);
+.adress {
+  padding-top: 60px;
+  padding-bottom: 60px;
+  font-style: normal;
 }
 .footer .logo {
   margin-bottom: 20px;
@@ -482,9 +486,11 @@ body {
 .footer .logo-text {
   color: var(--white-text-color);
 }
-
 .footer .list {
   line-height: 1.71;
+}
+.footer .text {
+  color: var(--white-text-color);
 }
 .footer .item:not(:last-child) {
   margin-bottom: 6px;
@@ -495,6 +501,20 @@ body {
 .footer .contact:hover,
 .footer .contact:focus {
   color: var(--accent-color);
+}
+.follow-us {
+  margin-left: 70px;
+  padding-top: 72px;
+}
+.follow-us > .title {
+  margin-bottom: 20px;
+  color: var(--white-text-color);
+}
+.follow-us .icon-set {
+  color: var(--white-text-color);
+}
+.follow-us .link {
+  background: rgba(255, 255, 255, 0.1);
 }
 
 /* ФУТЕР */
